@@ -1,0 +1,3 @@
+[submodule "hamsterkombat"]
+	path = hamsterkombat
+	url = https://github.com/Vasysik/hamsterkombat
