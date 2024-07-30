@@ -131,7 +131,8 @@ button:hover {
     color: var(--accent-color);
     font-size: 18px;
     margin-bottom: 5px;
-    display: block;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .status-value {
@@ -140,6 +141,7 @@ button:hover {
     background-color: var(--bg-secondary);
     border-radius: 20px;
     display: inline-block;
+    margin-right: 10px;
 }
 
 .status-item {
