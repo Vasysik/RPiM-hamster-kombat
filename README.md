@@ -25,7 +25,7 @@ RPiM-hamster-kombat is a module for RPiModules that allows you to set up and run
 
 3. Configure the `hamster_config.json` and `hamsterkombat/config.json` files within the hamster module according to your requirements.
 
-4. Install the `hamster.service` service for your [RPiModules](https://github.com/Vasysik/RPiModules).
+4. Configure and Install the `hamster.service` service for your [RPiModules](https://github.com/Vasysik/RPiModules).
 
    ```
    sudo cp /path/to/RPiModules/modules/hamster/hamster.service /etc/systemd/system/
