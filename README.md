@@ -2,7 +2,7 @@
 
 ## Description
 
-RPiM-hamster-kombat is a module for RPiModules that allows you to set up and run a mining operation for hamsters on your Raspberry Pi (RPi). This module is designed to enhance the functionality of your [RPiModules](https://github.com/Vasysik/RPiModules).
+RPiM-hamster-kombat is a module for [RPiModules](https://github.com/Vasysik/RPiModules) that allows you to set up and run a mining operation for hamsters on your Raspberry Pi (RPi). This module is designed to enhance the functionality of your [RPiModules](https://github.com/Vasysik/RPiModules).
 
 ## Installation
 
