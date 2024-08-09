@@ -93,10 +93,12 @@ function loadConfig() {
         .then(response => response.json())
         .then(config => {
             document.getElementById('auto-buy-upgrade').checked = config.Auto_Buy_Upgrade === 'ON';
+            document.getElementById('auto-taps-taps').checked = config.Auto_Taps_Taps === 'ON';
             document.getElementById('auto-complete-combo').checked = config.Auto_Complete_Combo === 'ON';
             document.getElementById('auto-complete-cipher').checked = config.Auto_Complete_Cipher === 'ON';
             document.getElementById('auto-complete-mini-game').checked = config.Auto_Complete_Mini_Game === 'ON';
             document.getElementById('auto-complete-tasks').checked = config.Auto_Complete_Tasks === 'ON';
+            document.getElementById('auto-redeem-promo').checked = config.Auto_Redeem_Promo === 'ON';
         })
         .catch(error => console.error('Error:', error));
 }
@@ -104,10 +106,13 @@ function loadConfig() {
 function saveConfig() {
     const config = {
         Auto_Buy_Upgrade: document.getElementById('auto-buy-upgrade').checked ? 'ON' : 'OFF',
+        Auto_Buy_Upgrade_Mode: '1',
+        Auto_Taps_Taps: document.getElementById('auto-taps-taps').checked ? 'ON' : 'OFF',
         Auto_Complete_Combo: document.getElementById('auto-complete-combo').checked ? 'ON' : 'OFF',
         Auto_Complete_Cipher: document.getElementById('auto-complete-cipher').checked ? 'ON' : 'OFF',
         Auto_Complete_Mini_Game: document.getElementById('auto-complete-mini-game').checked ? 'ON' : 'OFF',
-        Auto_Complete_Tasks: document.getElementById('auto-complete-tasks').checked ? 'ON' : 'OFF'
+        Auto_Complete_Tasks: document.getElementById('auto-complete-tasks').checked ? 'ON' : 'OFF',
+        Auto_Redeem_Promo: document.getElementById('auto-redeem-promo').checked ? 'ON' : 'OFF'
     };
 
     fetch('/hamster/api/config', {
